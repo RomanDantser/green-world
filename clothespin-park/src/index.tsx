@@ -6,7 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 import Main from "./pages/Main";
-import './index.css'
+import "./index.css";
 
 const router = createBrowserRouter(
   createRoutesFromElements(<Route path="/" element={<Main />}></Route>),
