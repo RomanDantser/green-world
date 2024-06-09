@@ -19,17 +19,24 @@
     --light-green-color: #4CCD99;
     --orange-color: #FFC700;
     --yellow-color: #FFF455;
+    --white-color: #FFFFFF;
 
     /* FONT-SIZES */
 
-    --font-size-s: 12px;
-    --font-size-m: 16px;
-    --font-size-l: 20px;
-    --fonst-size-xl: 24px;
+    --font-size-s: 25px;
+    --font-size-m: 35px;
+    --font-size-l: 45px;
+    --font-size-xl: 50px;
 }
 
 body {
     margin: 0;
     font-family: 'AmaticSC Bold', sans-serif;
+    font-size: var(--font-size-m);
     color: var(--dark-green-color);
+}
+
+a, a:active, a:focus {
+    color: var(--dark-green-color);
+    text-decoration: none;
 }
