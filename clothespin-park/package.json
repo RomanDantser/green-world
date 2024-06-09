@@ -8,8 +8,8 @@
     "dev": "NODE_ENV=development webpack-dev-server",
     "build": "NODE_ENV=development webpack",
     "build:prod": "rm -rf ./dist && NODE_ENV=production webpack",
-    "lint:check": "npx eslint .",
-    "lint:fix": "npx eslint --fix ."
+    "lint:check": "npx eslint . && npx stylelint \"**/*.css\"",
+    "lint:fix": "npx eslint --fix . && npx stylelint \"**/*.css\" --fix"
   },
   "author": "Roman Dantser",
   "license": "ISC",
@@ -41,6 +41,10 @@
     "eslint-plugin-react": "^7.34.2",
     "globals": "^15.4.0",
     "html-webpack-plugin": "^5.6.0",
+    "stylelint": "^16.6.1",
+    "stylelint-config-clean-order": "^6.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-order": "^6.0.4",
     "typescript-eslint": "^7.12.0"
   }
 }

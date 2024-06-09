@@ -49,7 +49,10 @@ module.exports = {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({
+    title: "Парк Прищепка",
+    template:"./src/static/template.html"
+  })],
   optimization: {
     splitChunks: {
       chunks: 'all',

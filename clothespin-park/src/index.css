@@ -1,3 +1,35 @@
+@font-face {
+    font-family: 'AmaticSC Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('static/fonts/AmaticSC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AmaticSC Bold';
+    font-weight: bold;
+    font-style: normal;
+    src: url('static/fonts/AmaticSC-Bold.ttf') format('truetype');
+}
+
+:root {
+    /* COLORS */
+
+    --dark-green-color: #007F73;
+    --light-green-color: #4CCD99;
+    --orange-color: #FFC700;
+    --yellow-color: #FFF455;
+
+    /* FONT-SIZES */
+
+    --font-size-s: 12px;
+    --font-size-m: 16px;
+    --font-size-l: 20px;
+    --fonst-size-xl: 24px;
+}
+
 body {
-    background-color: black;
+    margin: 0;
+    font-family: 'AmaticSC Bold', sans-serif;
+    color: var(--dark-green-color);
 }
