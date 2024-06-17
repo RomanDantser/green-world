@@ -1,0 +1,28 @@
+header {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100px;
+    padding: 0 calc(var(--base-space) * 5);
+
+    color: var(--white-color);
+
+    background-color: var(--light-green-color);
+}
+
+header a,
+header a:focus,
+header a:active {
+    color: var(--white-color);
+}
+.mainLink {
+    font-size: var(--font-size-l);
+}
+
+.navLink:not(:last-child) {
+    margin-right: calc(var(--base-space) * 6);
+}
